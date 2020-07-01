@@ -5,10 +5,15 @@
 */
 
 function caseInsensitivePalindrome(str) {
-  // code
+  // make the str caseless
+  const caselessStr = str.toLowerCase();
+  // compare it forwards and backwards
+  const reversedCaselessStr = caselessStr.split('').reverse().join('');
+  // return the results
+  return caselessStr === reversedCaselessStr;
 }
 
 const str1 = 'AaBaa'; // true
 const str2 = 'abac'; // false
-const result = caseInsensitivePalindrome(str1);
+const result = caseInsensitivePalindrome(str2);
 console.log("result: ", result);
