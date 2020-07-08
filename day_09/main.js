@@ -5,9 +5,10 @@
 
 function largestNumber(num) {
   const placeholder = '9'.repeat(num);
-  return parseInt( placeholder );
+  return parseInt(placeholder);
 }
 
 const num = 3;
+// @ts-ignore
 const result = largestNumber(num);
 console.log("result: ", result);
