@@ -4,7 +4,6 @@
     "commonjs": true,
     "es2020": true
   },
-  // "extends": "eslint:recommended",
   "extends": ["airbnb", "prettier", "plugin:node/recommended"],
   "plugins": ["prettier"],
   "parserOptions": {
@@ -17,6 +16,8 @@
     "func-names": "off",
     "no-process-exit": "off",
     "object-shorthand": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "no-plusplus": "off",
+    "no-param-reassign": "off"
   }
 }
